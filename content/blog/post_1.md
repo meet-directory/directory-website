@@ -29,3 +29,8 @@ I wanted to start this blog as an informal way to be more transparent about what
 - Become a nonprofit with tax-exempt status
 - Expand to other cities
 - Have funding for moderators and maintainers.
+
+
+Thank you for your support,
+
+~ Kek
