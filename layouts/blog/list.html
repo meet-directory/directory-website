@@ -1,0 +1,15 @@
+{{ define "main" }}
+  <div class="container">
+		  <section class="text-center">
+    <h2>~ Blog ~</h2>
+		  </section>
+	<br>
+    {{ range .Pages }}
+      <div class="card">
+			  <p class="blog-title"><a href="{{ .Permalink }}">{{ .Title }}</a></p>
+        <p class="text-muted">{{ .Date.Format "January 2, 2006" }}</p>
+        <p>{{ .Content }}</p>
+      </div>
+    {{ end }}
+  </div>
+{{ end }}

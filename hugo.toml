@@ -1,0 +1,5 @@
+baseURL = 'https://meet.directory/'
+locale = 'en-us'
+title = 'Directory'
+[markup.goldmark.renderer]
+unsafe = true

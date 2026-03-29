@@ -1,0 +1,164 @@
+{{ define "main" }}
+    <div class="container">
+
+      <!-- Hero -->
+      <section id="home">
+        <h1>Join <span class="text-accent">The Directory</span></h1>
+		<h1>&nbsp&nbsp&nbsp&nbsp Find Your People</h1>
+		<br>
+
+        <!-- Rotating Tag Spinner -->
+        <div class="tag-spinner-row">
+		<h2><span class="tag-spinner-label">Whether you're</span>
+          <div class="tag-spinner-window" id="spinner-1">
+            <!-- Tags are injected by JS -->
+          </div></h2>
+        </div>
+
+        <div class="tag-spinner-row">
+		<h2><span class="tag-spinner-label">Whether you're into</span>
+          <div class="tag-spinner-window" id="spinner-2">
+            <!-- Tags are injected by JS -->
+          </div></h2>
+        </div>
+
+		<!--
+        <div class="mt-4">
+          <a href="#features" class="btn">Get Started</a>
+          &nbsp;
+          <a href="#contact" class="btn btn-outline">Learn More</a>
+        </div>
+	  -->
+      </section>
+
+      <section class="hero" id="about">
+			  <br>
+			  <br>
+			  <br>
+			  <br>
+        <p>
+		A nonprofit, open source friending and dating app.
+        </p> 
+        <p>
+		Now available in North Carolina.
+        </p>
+      </section>
+
+  <script>
+    const spinners = [
+      {
+						<!-- 🧍💑😏🌳🏋️🎥📖📺🎵🎮🥕🕋🎨📖🌐⭐-->
+        el: document.querySelector("#spinner-1"),
+        tags: [
+          { label: "💑 Poly",             color: "#be8359ff" },
+          { label: "🧍 Queer",             color: "#c0a895ff" },
+          { label: "🧍 Cis", color: "#c0a895ff" },
+          { label: "🧍 Ambidextrous",      color: "#c0a895ff" },
+          { label: "💑 Monogamous",             color: "#be8359ff" },
+          { label: "🧍 Trans",             color: "#c0a895ff" },
+          { label: "🧍 Straight",               color: "#c0a895ff" },
+          { label: "💑 Coworking",             color: "#be8359ff" },
+          { label: "💑 Casual",             color: "#be8359ff" },
+        ],
+        current: 0,
+        offset: 0,
+      },
+      {
+        el: document.querySelector("#spinner-2"),
+        tags: [
+          { label: "🏋️ Bouldering",         color: "#cc6672ff" },
+          { label: "🎮 Settlers of Catan",         color: "#7995b7ff" },
+          { label: "🎥 Cinema",             color: "#7995b7ff" },
+          { label: "😏 Kink",         color: "#b594adff" },
+          { label: "⭐ Singing",        color: "#7a97a7ff" },
+          { label: "📖 Twilight",         color: "#7995b7ff" },
+          { label: "🌳 Birdwatching",       color: "#829989ff" },
+          { label: "🎥 The Owl House",      color: "#7995b7ff" },
+          { label: "🎮 Dungeons & Dragons",     color: "#7995b7ff" },
+          { label: "🌳 Mountain Biking",       color: "#829989ff" },
+          { label: "⭐ Modern Dance",        color: "#7a97a7ff" },
+          { label: "🎥 Kill Bill",            color: "#7995b7ff" },
+          { label: "📖 Poetry",         color: "#7995b7ff" },
+          { label: "⭐ Self Improvement",        color: "#7a97a7ff" },
+          { label: "🏋️ Boxing",         color: "#cc6672ff" },
+          { label: "😏 Kink",         color: "#b594adff" },
+          { label: "🎮 GTA",     color: "#7995b7ff" },
+          { label: "🏋️ Soccer",         color: "#cc6672ff" },
+          { label: "🎮 Settlers of Catan",         color: "#7995b7ff" },
+          { label: "📖 ACOTAR",         color: "#7995b7ff" },
+          { label: "⭐ Keyboards",        color: "#7a97a7ff" },
+          { label: "🌳 Stargazing",            color: "#829989ff" },
+          { label: "🎮 Factorio",     color: "#7995b7ff" },
+          { label: "🎥 Heated Rivalry",      color: "#7995b7ff" },
+          { label: "⭐ DIY",        color: "#7a97a7ff" },
+        ],
+        current: 0,
+        offset: 0, 
+      },
+    ];
+
+    function buildItem(item) {
+      const el = document.createElement("div");
+      el.className = "tag-spinner-item";
+      const tag = document.createElement("span");
+      tag.className = "tag";
+      tag.textContent = item.label;
+      tag.style.backgroundColor = item.color;
+      el.appendChild(tag);
+      return el;
+    }
+
+    function initSpinner(spinner) {
+      const first = buildItem(spinner.tags[0]);
+      first.classList.add("visible");
+      spinner.el.appendChild(first);
+    }
+
+    function rotateSpinner(spinner) {
+      const next = (spinner.current + 1) % spinner.tags.length;
+
+      const outgoing = spinner.el.querySelector(".tag-spinner-item.visible");
+      if (outgoing) {
+        outgoing.classList.remove("visible");
+        outgoing.classList.add("exit");
+        outgoing.addEventListener("animationend", () => outgoing.remove(), { once: true });
+      }
+
+      setTimeout(() => {
+        const incoming = buildItem(spinner.tags[next]);
+        incoming.classList.add("enter");
+        spinner.el.appendChild(incoming);
+        incoming.getBoundingClientRect();
+        incoming.classList.remove("enter");
+        incoming.classList.add("visible");
+        spinner.current = next;
+      }, 250);
+    }
+
+    spinners.forEach(spinner => {
+      initSpinner(spinner);
+      setTimeout(() => {
+        setInterval(() => rotateSpinner(spinner), 2200);
+
+      }, spinner.offset);
+    });
+  </script>
+  <script>
+  document.querySelector('.nav-toggle').addEventListener('click', () => {
+    document.querySelector('.nav-links').classList.toggle('open');
+  });
+  </script>
+
+  <script>
+	    const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+		const appLink = document.getElementById('app-link');
+		appLink.addEventListener('click', (e) => {
+		  if (isSafari) {
+			e.preventDefault(); // stop the redirect
+			alert('This app is not yet supported in Safari-based browsers (including any broswer on iOS) :(. It will work in any other browser on Mac.');
+		  }
+		});
+  </script>
+
+</div>
+{{ end}}

@@ -1,0 +1,451 @@
+/* ===========================
+   CSS Reset & Base Styles
+   =========================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===========================
+   CSS Variables
+   =========================== */
+:root {
+  --bg-primary:    #1e1e1e;
+  --bg-secondary:  #2a2a2a;
+  --bg-card:       #313131;
+  --border:        #3d3d3d;
+  --text-primary:  #f0f0f0;
+  --text-secondary:#a0a0a0;
+  --warm-text:	   #ead5c5;
+  --accent:        #af9bdd;
+  --accent-hover:  #b8a5e2;
+  --font-heading:  'Georgia', serif;
+  --font-body:     'Courier New', monospace;
+  --radius:        6px;
+  --transition:    0.2s ease;
+}
+
+/* ===========================
+   Base
+   =========================== */
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  line-height: 1.7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+/* ===========================
+   Typography
+   =========================== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: normal;
+  line-height: 1.25;
+  color: var(--text-primary);
+}
+
+h1 { font-size: 4rem; margin-bottom: 0.5rem; }
+h2 { font-size: 2.75rem; margin-bottom: 0.5rem; }
+h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
+.blog-title { font-size: 1.65rem; margin-bottom: 0.5rem; font-weight: bold; }
+
+
+p {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+ul li {
+  color: var(--text-secondary);
+  margin-left: 2rem
+}
+ul {
+  margin-bottom: 1rem;
+}
+
+ol li {
+  color: var(--text-secondary);
+  margin-left: 3.5rem
+}
+ol {
+  margin-bottom: 1rem;
+}
+
+
+
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+/* ===========================
+   Layout
+   =========================== */
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+
+/* ===========================
+   Header / Nav
+   =========================== */
+header {
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.nav-logo {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: .1rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  transition: color var(--transition);
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* ===========================
+   Main / Sections
+   =========================== */
+main {
+  min-height: 100vh;
+  padding: 4rem 0;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+/* ===========================
+   Hero
+   =========================== */
+.hero {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  max-width: 540px;
+  margin: 0 auto 2rem;
+}
+
+/* ===========================
+   Card
+   =========================== */
+.card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+/* ===========================
+   Button
+   =========================== */
+.btn {
+  display: inline-block;
+  background-color: var(--accent);
+  color: var(--bg-primary);
+  padding: 0.6rem 1.4rem;
+  border: none;
+  border-radius: var(--radius);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color var(--transition), transform var(--transition);
+}
+
+.btn:hover {
+  background-color: var(--accent-hover);
+  transform: translateY(-1px);
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+.btn-outline:hover {
+  background-color: var(--accent);
+  color: #fff;
+}
+
+/* ===========================
+   Footer
+   =========================== */
+footer {
+  background-color: var(--bg-secondary);
+  border-top: 1px solid var(--border);
+  padding: 2rem 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+/* ===========================
+   Utilities
+   =========================== */
+.text-accent   { color: var(--accent); }
+.text-muted    { color: var(--text-secondary); }
+.text-center   { text-align: center; }
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-4 { margin-top: 2rem; }
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-4 { margin-bottom: 2rem; }
+
+/* ===========================
+   Tag
+   =========================== */
+.tag {
+  padding: 0.45em 1.1em;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  font-family: var(--font-body);
+  color: #fff;
+  white-space: nowrap;
+  border: 2px solid rgba(0,0,0,.6);
+  border-bottom-width: 6px;
+  font-weight: bold;
+  /* colour is set inline via JS */
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.tag-row .tag {
+		padding: 0.25em .5em;
+		font-weight: normal;
+		font-size: 1rem;
+}
+
+/* ===========================
+   Tag Spinner
+   =========================== */
+.tag-spinner-row {
+  display: inline;
+  align-items: left;
+  justify-content: left;
+  gap: 0.6rem;
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin: 1.5rem 0 0;
+  max-height 20px;
+}
+
+.tag-spinner-label {
+  color: var(--warm-text);
+}
+
+.tag-spinner-window {
+  display: inline-block;
+  position: relative;
+  height: 1.7em;
+  overflow: hidden;
+  min-width: 280px;
+  vertical-align: middle;
+  margin-left: 0.6rem;
+  margin-right: -50px;
+}
+
+.tag-spinner-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.tag-spinner-item.enter {
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.tag-spinner-item.visible {
+  animation: spinnerIn 0.42s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.tag-spinner-item.exit {
+  animation: spinnerOut 0.38s cubic-bezier(0.55, 0, 1, 0.45) forwards;
+}
+
+/* ===========================
+   Hamburger Menu
+   =========================== */
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-wrap: wrap;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+    padding: 0.5rem 0;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 0.6rem 0;
+    border-top: 1px solid var(--border);
+  }
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+@media (max-width: 850px) {
+		h1 { font-size: 3.5rem; margin-bottom: 0.5rem; }
+		h2 { font-size: 2.3rem; margin-bottom: 0.5rem; }
+		.tag {
+				padding: 0.25em .5em;
+				font-weight: normal;
+				font-size: 1rem;
+		}
+		.tag-spinner-row {
+				font-size: 1.4rem;
+		}
+		.tag-spinner-window {
+				max-height: 2em; 
+				min-width: 210px;
+		}
+		.container {
+		  padding: 0 1.5rem;
+		}
+}
+
+@media (max-width: 500px) {
+		h1 { font-size: 1.9rem; margin-bottom: 0.5rem; }
+		h2 { font-size: 1.3rem; margin-bottom: 0.5rem; }
+		.tag {
+				padding: 0.25em .5em;
+				font-weight: normal;
+				font-size: 1rem;
+		}
+		.tag-spinner-row {
+				font-size: 1.4rem;
+		}
+		.tag-spinner-window {
+				max-height: 2em; 
+				min-width: 215px;
+		}
+		.container {
+		  padding: 0 1.5rem;
+		}
+}
+
+@keyframes spinnerIn {
+  from { transform: translateY(100%); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+@keyframes spinnerOut {
+  from { transform: translateY(0);     opacity: 1; }
+  to   { transform: translateY(-100%); opacity: 0; }
+}
