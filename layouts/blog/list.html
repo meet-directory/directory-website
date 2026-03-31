@@ -3,6 +3,54 @@
 		  <section class="text-center">
     <h2>~ Blog ~</h2>
 		  </section>
+
+<form id="subscribe-form" class="card mt-4">
+  <p class="mt-1">Receive new blog posts in your inbox!
+    <div style="display:flex; gap: 0.5rem; margin-top: 1rem;">
+    <input type="email" id="subscribe-email" placeholder="alice@email.com"
+           style="flex:1; padding: 0.5rem; border-radius: var(--radius);
+                  border: 1px solid var(--border); background: var(--bg-primary);
+                  color: var(--text-primary);">
+    <button type="button" id="subscribe-btn" class="btn">Subscribe</button>
+  </div>
+  <p id="subscribe-msg" style="display:none; margin-top: 1rem; text-align: center;"></p>
+</form>
+
+<script>
+  document.getElementById('subscribe-btn').addEventListener('click', async () => {
+    const email = document.getElementById('subscribe-email').value;
+    const msg = document.getElementById('subscribe-msg');
+
+    if (!email) return;
+    msg.style.display = 'block';
+	  msg.textContent = 'submitting your email...';
+	  msg.style.color = 'var(--accent)';
+    try {
+      const response = await fetch('https://buttondown.email/api/emails/embed-subscribe/directory', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams({ email })
+      });
+		if (response.ok) {
+			  msg.textContent = '🎉 Thanks for subscribing! Check your inbox to confirm.';
+			  msg.style.color = 'var(--accent)';
+		} else if (response.status === 400) {
+				msg.textContent = 'That email address looks invalid. Please try again.';
+				msg.style.color = '#c0392b';
+		} else {
+      msg.textContent = 'Something went wrong. Please try again.';
+      msg.style.color = '#c0392b';
+
+		}
+    } catch {
+      msg.textContent = 'Something went wrong. Please try again.';
+      msg.style.color = '#c0392b';
+    }
+
+  });
+</script>
+<p style="text-align:right">Or subscribe to the <a href="/blog/index.xml">RSS Feed</a></p>
+
 	<br>
     {{ range .Pages }}
       <div class="card">

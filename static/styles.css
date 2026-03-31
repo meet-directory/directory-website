@@ -208,7 +208,7 @@ section {
   display: inline-block;
   background-color: var(--accent);
   color: var(--bg-primary);
-  padding: 0.6rem 1.4rem;
+  padding: 0.4rem 1rem;
   border: none;
   border-radius: var(--radius);
   font-family: var(--font-body);
