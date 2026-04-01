@@ -143,22 +143,6 @@
       }, spinner.offset);
     });
   </script>
-  <script>
-  document.querySelector('.nav-toggle').addEventListener('click', () => {
-    document.querySelector('.nav-links').classList.toggle('open');
-  });
-  </script>
-
-  <script>
-	    const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-		const appLink = document.getElementById('app-link');
-		appLink.addEventListener('click', (e) => {
-		  if (isSafari) {
-			e.preventDefault(); // stop the redirect
-			alert('This app is not yet supported in Safari-based browsers (including any broswer on iOS) :(. It will work in any other browser on Mac.');
-		  }
-		});
-  </script>
 
 </div>
 {{ end}}
