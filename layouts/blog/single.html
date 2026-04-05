@@ -2,6 +2,13 @@
   <div class="container">
     <article>
       <h1>{{ .Title }}</h1>
+	  {{ if .Params.tags }}
+  <div class="tag-row">
+    {{ range .Params.tags }}
+      <a href="/tags/{{ . | urlize }}" class="tag" style="background-color: #2980b9; text-decoration:none;">{{ . }}</a>
+    {{ end }}
+  </div>
+{{ end }}
       <p class="text-muted">{{ .Date.Format "January 2, 2006" }}</p>
       {{ .Content }}
     </article>

@@ -1,7 +1,7 @@
 ---
 title: "Hello world!"
 date: 2026-03-29
-description: "A short summary shown on the blog index."
+tags: ["roadmap"]
 ---
 
 We had a lot of fun finally announcing Directory in public this week and getting our first handful of users! You all had lots of great feedback for us to work on! The beta version of Directory is available to use in your browser right now for North Carolina residents! 
@@ -33,4 +33,4 @@ I wanted to start this blog as an informal way to be more transparent about what
 
 Thank you for your support,
 
-~ Kek
+~ Cecilia
