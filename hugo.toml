@@ -2,6 +2,11 @@ baseURL = 'https://meet.directory/'
 locale = 'en-us'
 title = 'Directory'
 disableKinds = ["taxonomy", "term"]
+defaultContentLanguage = "en"
+[languages.en]
+  languageCode = "en-US"
+  languageName = "English"
+
 [markup.goldmark.renderer]
 unsafe = true
 
