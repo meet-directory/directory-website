@@ -3,6 +3,7 @@ title: "v0.2-beta Release Notes"
 date: 2026-04-30
 tags: ["release-notes"]
 ---
+## News
 
 ### Call for Photos!
 As the mobile release of Directory approaches, I'm searching for photos to be used in marketing! I'm looking for photos that look like authentic profile pictures with personality. Photos of couples or multiple partners are welcome!
@@ -34,7 +35,7 @@ When all tags are treated equally and there are potentially many synonymous tags
 
 This was a hard choice, because to me the custom tagging system is the bread and butter of directory. Part of what initially felt special was that no labels were "baked in" or more important than any other. 
 
-But I think the reality is most people are going to identify strongly with female, male, or nonbinary and have a strong preference for who they want to meet if they are using the app for dating. Hard-coding these into the app makes the standard case much easier to navigate as a user. 
+But I think the reality is most people are going to identify strongly with female, male, or nonbinary and have a strong preference for who they want to meet if they are using the app for dating. Hard-coding these into the app makes it much easier to onboard and navigate as a user.
 
 If anyone has thoughts on how to do this better, I would love to hear them!
 
