@@ -1,7 +1,7 @@
 ---
 title: "v0.1.1-beta Release Notes!"
 date: 2026-04-05
-tags: ["release notes", "Q&A"]
+tags: ["release-notes", "Q&A"]
 ---
 
 A few updates since our first release one week ago!
