@@ -1,0 +1,7 @@
+{{ $colors := dict
+  "entrepreneur-ride-along" "#cc9a66"
+  "roadmap" "#96819e"
+  "release-notes" "#76a08b"
+}}
+{{ $color := index $colors . | default "#5d7fba" }}
+<span class="tag" style="background-color: {{ $color }}; font-size: 0.75em;">{{ . }}</span>

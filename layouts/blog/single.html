@@ -1,15 +1,19 @@
 {{ define "main" }}
   <div class="container">
     <article>
-      <h1>{{ .Title }}</h1>
-	  {{ if .Params.tags }}
-  <div class="tag-row">
-    {{ range .Params.tags }}
-      <a href="/tags/{{ . | urlize }}" class="tag" style="background-color: #2980b9; text-decoration:none;">{{ . }}</a>
-    {{ end }}
-  </div>
-{{ end }}
-      <p class="text-muted">{{ .Date.Format "January 2, 2006" }}</p>
+      <h1 class="blog-title" style="color: var(--accent)">{{ .Title }}</h1>
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <p class="text-muted" style="margin:0;">{{ .Date.Format "January 2, 2006" }}</p>
+        {{ if .Params.tags }}
+        <div class="tag-row" style="margin:0; justify-content:flex-end;">
+          {{ range .Params.tags }}
+			{{ partial "tag.html" . }}
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+		  <br>
+		  <br>
       {{ .Content }}
     </article>
   </div>

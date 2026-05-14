@@ -15,7 +15,7 @@
   --bg-secondary:  #2a2a2a;
   --bg-card:       #313131;
   --border:        #3d3d3d;
-  --text-primary:  #f0f0f0;
+  --text-primary:  #e3e0e3;
   --text-secondary:#a0a0a0;
   --warm-text:	   #ead5c5;
   --accent:        #af9bdd;
@@ -151,6 +151,32 @@ hr {
   border-top: 1px solid var(--border);
   height: 0;
 }
+/* ===========================
+   Blog
+   =========================== */
+
+article h1 {
+  color: var(--accent);
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+article h2 {
+  color: var(--accent);
+  font-size: 1.5rem;
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+article h3 {
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  margin-top: 1.6rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
 
 /* ===========================
    Layout

@@ -52,25 +52,22 @@
 <p style="text-align:right">Or subscribe to the <a href="/blog/index.xml">RSS Feed</a></p>
 
 	<br>
-    {{ range .Pages }}
-      <div class="card">
-
-
-			  <div style="display:flex; justify-content:space-between; align-items:center;">
-					  <p class="text-muted">{{ .Date.Format "January 2, 2006" }}</p>
-					  {{ if .Params.tags }}
-					  <div class="tag-row" style="margin:0;">
-							  {{ range .Params.tags }}
-							  <span class="tag" style="background-color: #5d7fba;">{{ . }}</span>
-							  {{ end }}
-					  </div>
-					  {{ end }}
-			  </div>
-					  <p class="blog-title" style="text-align:center;"><a href="{{ .Permalink }}">{{ .Title }}</a></p>
-					  <p style="text-align:center;">~~~~~~~~~~~~~~~~~~~~~</p>
-			  <p>{{ .Content }}</p>
-	  </div>
-	  <br>
+	{{ range .Pages }}
+  <div style="display:flex; justify-content:space-between; align-items:center;">
+    <a href="{{ .Permalink }}">
+      <span class="text-muted">{{ .Date.Format "January 2, 2006" }}</span>
+      &emsp;
+      <span class="blog-title">{{ .Title }}</span>
+    </a>
+    {{ if .Params.tags }}
+    <div  style="margin:0; justify-content:flex-end;">
+      {{ range .Params.tags }}
+	  {{ partial "tag.html" . }}
+      {{ end }}
+    </div>
     {{ end }}
   </div>
+  <br>
 {{ end }}
+  </div>
+  {{ end }}
