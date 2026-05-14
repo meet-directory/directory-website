@@ -1,7 +1,7 @@
 ---
 title: "CEO's first mail"
 date: 2026-04-15
-tags: ["entrepreneur ride-along"]
+tags: ["entrepreneur-ride-along"]
 ---
 
 One of the first things you want to do when starting a business is register a
