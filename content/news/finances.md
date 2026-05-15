@@ -13,7 +13,7 @@ I used to think that [microservice
 bloat](https://www.youtube.com/watch?v=y8OnoxKotPQ) was endemic to nonsensical
 corporate environments, but as I work toward making Directory a reality, I
 have found that a fair amount of services are necessary. My short former life as a devops
-engineer has at least given me a sense of how to pick services that are cheap
+person has at least given me a sense of how to pick services that are cheap
 and have a minimal amount of BS.
 
 That deserves a separate post, but suffice it to say I've tried my best to keep
@@ -57,23 +57,18 @@ me, so `¯\_(ツ)_/¯`.
 
 ### Legal Costs
 
-The only cost so far was the $125 LLC registration fee. I did most of my legal
-research consulting and drafting with Claude AI. Then I was able to get a free
-30 minute consultation with a local startup law firm at the [Carolina
+I did most of my legal research consulting and drafting with Claude. Then I
+was able to get a free 30 minute legal consultation at the [Carolina
 Junction](https://junction.unc.edu/) that assuaged my fears of using my own
 legal documents.
 
-If I had used legal services, their normal rate was $450/hour or $1000 flat fee
-to create an initial document package with things like the terms of service,
-privacy policy, and documents related to the LLC filing. One lawyer I contacted
-charges $350 just for an initial consultation!
+If I had used legal services from some of the lawyers I asked, normal rates were
+around $450/hour. One lawyer I contacted charges $350 just for an initial consultation!
 
 ### Marketing Costs aaaaah
-Targeted digital ads are crazy expensive (Google charges around $4-$12 _per click_ for search terms like "dating app"), so I won't be doing that.
-
-Since I'm only in the Triangle, my main marketing plan is of course [the Poster
-Guys](https://www.theposterguys.com/), which is $100 for 200 posters in Chapel
-Hill and Durham. If any readers out there have other ideas for spreading the
+Since I'm in the Triangle, I will of course be using [the Poster
+Guys](https://www.theposterguys.com/) ($100 for 200 posters around Chapel
+Hill and Durham). If any readers out there have other ideas for spreading the
 word locally, do let me know!
 
 I'm also providing [$50 per photo submission I use](/photo_submission).
@@ -81,22 +76,20 @@ I'm also providing [$50 per photo submission I use](/photo_submission).
 
 ### The Future
 
-If Directory somehow gets bigger and requires more time and money to sustain,
-I'm hoping the amount of people who join will be proportional to a sustainable
-amount of donations. It works for Wikipedia, maybe it can work for us too.
+I initially decided to give myself a budget of about $2500 to see if I can get
+Directory off the ground to the point of being able to run on donations. I'm still
+within that budget.
 
-I initially decided to give myself a budget of about $2000 to see if I can get
-Directory off the ground to the point of running on donations. I'm still
-within that budget. If things get more serious I may need to give a lawyer some
-money for actual legal advice. And I may need to buy a dedicated IPhone for
-testing instead of borrowing my mom's, but for now, things are pretty cheap.
+If things get more serious I may need to give a lawyer some actual money for
+actual legal advice. And I may need to buy a dedicated IPhone for testing
+instead of borrowing my mom's, but for now, things are pretty cheap.
 
-The main cost of Directory has been my time. I've spent the last 12 weeks
-working more or less full time on this project. My hope is that once all of the
-base features have been perfected, this app can stand on its own
-with simple maintanence and moderation.
+The real cost of Directory has been my time. I've spent the last 12 weeks
+working more or less full time on this project. Perhaps once the technical part
+is done, Directory can stand on its own with simple maintanence and moderation.
 
-Lets see how well we do once we launch on mobile platforms later this month!
+Anything more is wishful thinking at this point, but we'll see how well we do
+once we launch on mobile platforms later this month!
 
 
 Stay tuned
