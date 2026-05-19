@@ -61,6 +61,11 @@ body {
   height: auto;
 }
 
+.side-by-side img {
+		max-height: 400px;
+		width: auto
+}
+
 figcaption {
   font-size: 0.8em;
   color: var(--text-secondary);

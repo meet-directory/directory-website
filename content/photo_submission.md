@@ -23,6 +23,17 @@ identifying information is shared.
 If you prefer to donate photos you can send them directly with the "As
 Donation" form below copied into your email.
 
+---
+
+**Be like these cool people and submit your photos!**
+
+<div class="side-by-side" style="display:flex; flex-wrap:wrap; gap:0.5rem; align-items:flex-start;">
+
+![description of third image](/pics/caleb.png)
+![description of first image](/pics/marcel.png)
+![description of first image](/pics/em.png)
+![description of first image](/pics/jane.png)
+</div>
 
 
 ---
