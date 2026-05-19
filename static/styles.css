@@ -62,7 +62,7 @@ body {
 }
 
 .side-by-side img {
-		max-height: 400px;
+		max-width: 178px;
 		width: auto
 }
 
@@ -526,7 +526,7 @@ footer p {
 		  padding: 0 1.5rem;
 		}
 		.side-by-side img {
-				max-height: 300px;
+				max-width: 100px;
 		}
 }
 
