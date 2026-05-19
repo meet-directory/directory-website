@@ -525,6 +525,9 @@ footer p {
 		.container {
 		  padding: 0 1.5rem;
 		}
+		.side-by-side img {
+				max-height: 300px;
+		}
 }
 
 @keyframes spinnerIn {
