@@ -54,10 +54,20 @@ type: page
   We reserve the right to remove any content and suspend or permanently ban any account that violates these rules, at our sole discretion and without notice. Egregious violations — including any form of sexual exploitation — may be reported to law enforcement.
   To report a user or content, you can do so directly in the app, or contact us at <a href="mailto:contact@meet.directory">contact@meet.directory</a>.
  
-  ### Copyright Infringement and DMCA Statement
+### Copyright Infringement and DMCA Statement
   Your Directory profile should reflect you personally and contain only your personal photos and statements. In accordance with the Digital Millennium Copyright Act (DMCA), we will respond to valid notices of copyright infringement and remove or disable access to infringing content.
   If you believe content on Directory infringes your copyright, send a written notice to <a href="mailto:contact@meet.directory">contact@meet.directory</a> and we will promptly remove or disable access to it. We reserve the right to permanently terminate accounts of repeat infringers. False or bad-faith notices may expose the submitter to legal liability.
   If you believe your content was removed in error, you may also send a notice to our email and we will review the situation.
+
+### Child Safety
+Directory has a zero-tolerance policy for child sexual abuse and exploitation (CSAE) in any form. You agree not to use the app to:
+
+Share, solicit, or distribute child sexual abuse material (CSAM) of any kind
+Exploit, groom, or solicit minors for sexual purposes
+Use coded language, tags, or any other means to facilitate sexual exploitation of minors
+
+Any account found to be in violation of this policy will be permanently banned immediately and reported to the National Center for Missing and Exploited Children (NCMEC) and relevant law enforcement authorities. We are legally required to report confirmed CSAM to NCMEC and will do so without exception.
+This app is strictly for users 18 and older. If you believe a minor is being exploited or endangered on this platform, report it immediately in the app or at contact@meet.directory.
 
 ### User-Defined Tags
 
