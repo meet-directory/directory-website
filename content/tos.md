@@ -78,7 +78,7 @@ This app is strictly for users 18 and older. If you believe a minor is being exp
 
 Tags that are sexual or explicit in nature are only permitted under the following conditions:
 
-- The tag is designated with the sex category
+- The tag is designated with the intimacy category
 - The tag does not reference or suggest non-consensual sexual activity of any kind
 - The tag does not reference minors in a sexual context in any way
 - The tag does not reference sexual violence, torture, or abuse
