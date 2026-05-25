@@ -1,6 +1,8 @@
 ---
-title: "Delete Your Account"
+title: "App Support"
 type: page
+aliases:
+ - /delete
 ---
 <h2><span class="text-accent">Directory App Support</span></h2>
 
