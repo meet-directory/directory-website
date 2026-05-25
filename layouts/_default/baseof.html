@@ -19,7 +19,7 @@
         <ul class="nav-links">
           <li><a href="/about">About</a></li>
           <li><a href="/news">Newsletter</a></li>
-          <li><a href="/donate">Support</a></li>
+          <li><a href="/donate">Support Us</a></li>
 		  <li><a href="https://app.meet.directory" id="app-link"><span class="btn">Launch (beta)</span></a></li>
         </ul>
       </nav>
@@ -31,16 +31,22 @@
   </main>
 
   <footer>
-		  <div class="container">
-				  <nav class="footer-links">
-						  <span class="text-accent"><b>Legal</b></span>
-						  <a href="/tos">Terms of Service</a>
-						  <a href="/dpp">Privacy Policy</a>
-						  <a href="/photo_submission">Photo Submissions</a>
-				  </nav>
-				  <p class="text-muted">&copy; 2026 Directory. All rights reserved.</p>
-		  </div>
-  </footer>
+  <div class="container">
+    <div style="display:flex; justify-content:space-between;">
+      <nav class="footer-links">
+        <span class="text-accent"><b>Legal</b></span>
+        <a href="/tos">Terms of Service</a>
+        <a href="/dpp">Privacy Policy</a>
+        <a href="/photo_submission">Photo Submissions</a>
+      </nav>
+      <nav class="footer-links" style="align-items:flex-end; align-self:flex-start;">
+        <span class="text-accent"><b>Guidelines</b></span>
+        <a href="/delete">App Support</a>
+      </nav>
+    </div>
+    <p class="text-muted">&copy; 2026 Directory. All rights reserved.</p>
+  </div>
+</footer>
 
   <script>
 	    const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);

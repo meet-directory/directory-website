@@ -15,7 +15,7 @@
   --bg-secondary:  #2a2a2a;
   --bg-card:       #313131;
   --border:        #3d3d3d;
-  --text-primary:  #e3e0e3;
+  --text-primary:  #d3d0e3;
   --text-secondary:#a0a0a0;
   --warm-text:	   #ead5c5;
   --accent:        #af9bdd;
@@ -86,7 +86,8 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 { font-size: 4rem; margin-bottom: 0.5rem; }
 h2 { font-size: 2.75rem; margin-bottom: 0.5rem; }
-h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
+h3 { font-size: 1.25rem; margin-bottom: 0.5rem; font-weight:bold;}
+h4 { margin-bottom: 0.5rem; font-weight:bold;}
 .blog-title { font-size: 1.65rem; margin-bottom: 0.5rem; font-weight: bold; }
 
 table {
