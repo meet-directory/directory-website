@@ -97,14 +97,16 @@ figcaption {
 
   }
 
+.photo-spacer { padding-bottom: 400px; }
+
 .photo-strip {
   position: absolute;
-  bottom: 0;
+  bottom: -30px;
   left: -200px;
   width: 140%;
   display: flex;
   gap: 2rem;
-  transform: rotate(-10deg);
+  transform: rotate(-5deg);
   opacity: 1;
 }
 
@@ -349,7 +351,7 @@ nav {
    Main / Sections
    =========================== */
 main {
-  min-height: 100vh;
+  flex: 1;
   padding: 4rem 0;
   position: relative;
 }
@@ -370,7 +372,7 @@ main {
 
 .hero p {
   font-size: 1.1rem;
-  max-width: 540px;
+  max-width: 590px;
   margin: 0 auto 2rem;
 }
 
@@ -561,6 +563,7 @@ footer p {
 				gap: 0.4rem;
 		}
 		.photo-strip img { height: 300px; }
+		.photo-spacer { padding-bottom: 200px; }
 }
 
 @media (max-width: 500px) {
@@ -588,7 +591,8 @@ footer p {
 		.photo-strip { 
 				gap: 0.1rem; 
 		}
-		.photo-strip img { height: 200px; }
+		.photo-strip img { height: 230px; }
+		.photo-spacer { padding-bottom: 110px; }
 }
 
 @keyframes spinnerIn {
