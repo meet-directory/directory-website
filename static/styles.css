@@ -15,9 +15,9 @@
   --bg-secondary:  #2a2a2a;
   --bg-card:       #313131;
   --border:        #3d3d3d;
-  --text-primary:  #d3d0e3;
+  --text-primary:  #e3e0e3;
   --text-secondary:#a0a0a0;
-  --warm-text:	   #ead5c5;
+  --warm-text:	   #d3d0e3;
   --accent:        #af9bdd;
   --accent-hover:  #b8a5e2;
   --font-heading:  'Georgia', serif;
@@ -72,6 +72,95 @@ figcaption {
   text-align: center;
   margin-top: -1rem;
   margin-bottom: 2rem;
+}
+/* ===========================
+   Index
+   =========================== */
+.photo-strip-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+}
+.photo-mask {
+  position: absolute;
+  min-height: 100vh;
+  width: 100%;
+  -webkit-mask-image: linear-gradient(to bottom, black 40%, rgba(0,0,0,0.3) 100%);
+  mask-image: linear-gradient(to bottom, black 40%, rgba(0,0,0,0.3) 100%);
+  }
+
+.photo-strip {
+  position: absolute;
+  top: 30em;
+  left: -200px;
+  width: 140%;
+  display: flex;
+  gap: 2rem;
+  transform: rotate(-10deg);
+  opacity: 1;
+}
+
+.photo-strip img {
+  width: auto;
+  height: 500px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  flex-shrink: 0;
+}
+.tag-spinner-row {
+  display: inline;
+  align-items: left;
+  justify-content: left;
+  gap: 0.6rem;
+  font-size: 2rem;
+  font-family: var(--font-heading);
+  color: var(--text-secondary);
+  margin: 1.5rem 0 0;
+  max-height 20px;
+}
+
+.tag-spinner-label {
+  color: var(--warm-text);
+}
+
+.tag-spinner-window {
+  display: inline-block;
+  position: relative;
+  height: 1.7em;
+  overflow: hidden;
+  min-width: 280px;
+  vertical-align: middle;
+  margin-left: 0.6rem;
+  margin-right: -50px;
+}
+
+.tag-spinner-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.tag-spinner-item.enter {
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.tag-spinner-item.visible {
+  animation: spinnerIn 0.42s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.tag-spinner-item.exit {
+  animation: spinnerOut 0.38s cubic-bezier(0.55, 0, 1, 0.45) forwards;
 }
 
 /* ===========================
@@ -198,6 +287,8 @@ figcaption {
    =========================== */
 
 .container {
+		position: relative;
+		z-index: 1;
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
@@ -260,7 +351,7 @@ main {
 }
 
 section {
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 
 /* ===========================
@@ -340,6 +431,7 @@ footer {
   border-top: 1px solid var(--border);
   padding: 2rem 0;
   text-align: center;
+  z-index: 1;
 }
 
 footer p {
@@ -387,58 +479,6 @@ footer p {
 		font-size: 1rem;
 }
 
-/* ===========================
-   Tag Spinner
-   =========================== */
-.tag-spinner-row {
-  display: inline;
-  align-items: left;
-  justify-content: left;
-  gap: 0.6rem;
-  font-size: 1.1rem;
-  color: var(--text-secondary);
-  margin: 1.5rem 0 0;
-  max-height 20px;
-}
-
-.tag-spinner-label {
-  color: var(--warm-text);
-}
-
-.tag-spinner-window {
-  display: inline-block;
-  position: relative;
-  height: 1.7em;
-  overflow: hidden;
-  min-width: 280px;
-  vertical-align: middle;
-  margin-left: 0.6rem;
-  margin-right: -50px;
-}
-
-.tag-spinner-item {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.tag-spinner-item.enter {
-  transform: translateY(100%);
-  opacity: 0;
-}
-
-.tag-spinner-item.visible {
-  animation: spinnerIn 0.42s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-}
-
-.tag-spinner-item.exit {
-  animation: spinnerOut 0.38s cubic-bezier(0.55, 0, 1, 0.45) forwards;
-}
 
 /* ===========================
    Hamburger Menu
@@ -515,6 +555,8 @@ footer p {
 		.container {
 		  padding: 0 1.5rem;
 		}
+		.photo-strip { gap: 0.4rem; }
+		.photo-strip img { height: 300px; }
 }
 
 @media (max-width: 500px) {
@@ -538,6 +580,9 @@ footer p {
 		.side-by-side img {
 				max-width: 150px;
 		}
+
+		.photo-strip { gap: 0.1rem; }
+		.photo-strip img { height: 200px; }
 }
 
 @keyframes spinnerIn {
