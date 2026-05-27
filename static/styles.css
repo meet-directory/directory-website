@@ -575,11 +575,11 @@ footer p {
 				font-size: .8rem;
 		}
 		.tag-spinner-row {
-				font-size: 1.4rem;
+				font-size: 1.1rem;
 		}
 		.tag-spinner-window {
 				max-height: 2em; 
-				min-width: 165px;
+				min-width: 170px;
 		}
 		.container {
 		  padding: 0 1.5rem;
