@@ -97,7 +97,7 @@ figcaption {
 
 .photo-strip {
   position: absolute;
-  bottom: 0rem;
+  bottom: 0;
   left: -200px;
   width: 140%;
   display: flex;
@@ -556,7 +556,10 @@ footer p {
 		.container {
 		  padding: 0 1.5rem;
 		}
-		.photo-strip { gap: 0.4rem; }
+		.photo-strip {
+				left: -200px;
+				gap: 0.4rem;
+		}
 		.photo-strip img { height: 300px; }
 }
 
@@ -566,14 +569,14 @@ footer p {
 		.tag {
 				padding: 0.25em .5em;
 				font-weight: normal;
-				font-size: 1rem;
+				font-size: .8rem;
 		}
 		.tag-spinner-row {
 				font-size: 1.4rem;
 		}
 		.tag-spinner-window {
 				max-height: 2em; 
-				min-width: 215px;
+				min-width: 175px;
 		}
 		.container {
 		  padding: 0 1.5rem;
@@ -584,7 +587,7 @@ footer p {
 
 		.photo-strip { 
 				gap: 0.1rem; 
-				top: 40rem;
+				bottom: 10%;
 		}
 		.photo-strip img { height: 200px; }
 }
