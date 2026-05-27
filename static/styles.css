@@ -40,7 +40,6 @@ body {
   font-family: var(--font-body);
   line-height: 1.7;
   min-height: 100vh;
-  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
@@ -84,14 +83,13 @@ figcaption {
   width: 100%;
   height: 100%;
   min-height: 100vh;
-  min-height: 100dvh;
   z-index: 0;
   pointer-events: none;
+  overflow:hidden;
 }
 .photo-mask {
   position: absolute;
   min-height: 100vh;
-  min-height: 100dvh;
   width: 100%;
   -webkit-mask-image: linear-gradient(to bottom, black 40%, rgba(0,0,0,0.3) 100%);
   mask-image: linear-gradient(to bottom, black 40%, rgba(0,0,0,0.3) 100%);
@@ -99,7 +97,7 @@ figcaption {
 
 .photo-strip {
   position: absolute;
-  top: 30em;
+  bottom: 0rem;
   left: -200px;
   width: 140%;
   display: flex;
@@ -350,7 +348,6 @@ nav {
    =========================== */
 main {
   min-height: 100vh;
-  min-height: 100dvh;
   padding: 4rem 0;
 }
 
@@ -585,7 +582,10 @@ footer p {
 				max-width: 150px;
 		}
 
-		.photo-strip { gap: 0.1rem; }
+		.photo-strip { 
+				gap: 0.1rem; 
+				top: 40rem;
+		}
 		.photo-strip img { height: 200px; }
 }
 
