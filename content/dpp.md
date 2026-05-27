@@ -3,10 +3,10 @@ title: "Data Privacy Policy"
 type: page
 ---
 
-			<h2>Data Privacy Policy</h2>
-			<p>Last updated: April 14, 2026</p>
+<h2>Data Privacy Policy</h2>
+<p>Last updated: April 14, 2026</p>
 
-			<p>This policy describes how Social Directory LLC collects and uses your data.<p>
+<p>This policy describes how Social Directory LLC collects and uses your data.<p>
 
 <h3>What we collect</h3><p>
  We collect information you provide directly: your email, age, photos, messages, and any other profile information. We also collect basic usage data such as device type as well as coarse location data, with latitude and longitude rounded to three decimal places.
