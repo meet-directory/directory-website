@@ -178,8 +178,8 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-primary);
 }
 
-h1 { font-size: 4rem; margin-bottom: 0.5rem; }
-h2 { font-size: 2.75rem; margin-bottom: 0.5rem; }
+h1 { font-size: 4rem; margin-bottom: 0.5rem; text-align: center; }
+h2 { font-size: 2.75rem; margin-bottom: 0.5rem; text-align: center; }
 h3 { font-size: 1.25rem; margin-bottom: 0.5rem; font-weight:bold;}
 h4 { margin-bottom: 0.5rem; font-weight:bold;}
 .blog-title { font-size: 1.65rem; margin-bottom: 0.5rem; font-weight: bold; }
@@ -356,6 +356,21 @@ main {
   position: relative;
 }
 
+.inline-img {
+  object-fit: cover;       /* crop to fill the circle without distortion */
+  border-radius: 50%;       /* make it circular */
+  border: 4px solid var(--accent); 
+  margin: 0.6rem 0.6rem 0.6rem 0.6rem;
+}
+
+.circle-img {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;       /* crop to fill the circle without distortion */
+  border-radius: 50%;       /* make it circular */
+  border: 4px solid var(--accent);   /* the border */
+}
+
 
 /* ===========================
    Hero
@@ -475,6 +490,7 @@ footer p {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 .tag-row .tag {
 		padding: 0.25em .5em;
