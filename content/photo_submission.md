@@ -6,22 +6,25 @@ type: page
 ## Photo Submissions
 
 Directory is currently accepting photo submissions to be used in marketing!
-We're looking for authentic profile pictures and can offer $50 per photo we
-decide to use. If you know anyone who is interested, feel free share this
-opportunity! Thank you!
+We're looking for authentic profile pictures and romantic/happy group pictures.
+You can donate them or we can offer $50 ($70 for group) per photo we decide to
+use. If you know anyone who is interested, feel free share this opportunity!
+Thank you!
 
-To submit photos:
+To submit single photos:
 1. Email them directly to cecilia@meet.directory
 2. We'll reply if we are interested in using any
 3. You'll send back the release form below with your name.
-4. We will venmo you the amount.
+4. (If for payment) We will venmo you the amount.
 
-Note that we will only have the right to use the photos we specify and for
-which you agree to the release form. Only the photos will be used, no other
-identifying information is shared.
+For group photos:
+1. One person email them to cecilia@meet.directory
+2. We'll reply if we want to use any.
+3. In your reply you will name each person in the photo and CC them to the email thread.
+4. Each person in the photo will send the group release form from below.
+5. (If for payment) We will venmo one person the amount to split amongst the submitters.
 
-If you prefer to donate photos you can send them directly with the "As
-Donation" form below copied into your email.
+**Note:** when we use your photos, none of your personal information will ever be shared.
 
 ---
 
@@ -37,7 +40,7 @@ Donation" form below copied into your email.
 
 
 ---
-## Forms
+## Single Forms
 ---
 ### For Payment
 
@@ -65,3 +68,11 @@ I am donating my photo(s) at no cost and understand I will not receive compensat
 This agreement is governed by the laws of North Carolina.
 
 [Full Name] [Today's Date]
+
+---
+
+## Group Forms
+
+---
+
+Coming soon!
