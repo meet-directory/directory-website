@@ -32,10 +32,10 @@ For group photos:
 
 <div class="side-by-side" style="display:flex; flex-wrap:wrap; gap:0.5rem; align-items:flex-start;">
 
-![description of third image](/pics/caleb.png)
-![description of first image](/pics/marcel.png)
-![description of first image](/pics/em.png)
-![description of first image](/pics/jane.png)
+![description of third image](/pics/caleb.webp)
+![description of first image](/pics/marcel.webp)
+![description of first image](/pics/em.webp)
+![description of first image](/pics/jane.webp)
 </div>
 
 
