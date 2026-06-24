@@ -83,8 +83,7 @@ Chapel Hill, where I learned to hate modern technology.
 And while apps may suck, dating apps have been revolutionary for connecting LGBT
 people and are now so mainstream that they seem to be here to stay. I wanted to
 build an alternative that isn't guided by profit (though I'll certainly take
-donations at some point). If this model works for Wikipedia, I figured it could work
-for me.
+donations at some point). 
 
 Thanks for your support,
 
@@ -95,9 +94,9 @@ Thanks for your support,
 
 ### Development Status
 
-The app is fully functional on browser and mobile. But there are still a few kinks to work out and features to add, such as linked accounts. App store approval is currently pending. You can sign up for early access by emailing us!
+I began making this app in February of 2026. It now mostly works, but there are a few kinks to work out before I remove the "beta" lable. It is now available on Android and coming soon to iOS!
 
-We are currently in beta and only have a hub in the North Carolina Triangle area!
+We are currently working on building a hub in the North Carolina Triangle area!
 See what you can do to [support us](/donate) and read more about our development status on our [blog](/news).
 
 

@@ -37,7 +37,7 @@ the email address associated to your google or apple account!
 
 ### Contribute your expertise
 
-My biggesst need right now are:
+My biggest needs right now are:
 - help with marketing (i.e. running an instagram account)
 - developers to help with android/ios integration
 - legal advice
@@ -49,10 +49,3 @@ My biggesst need right now are:
 If you are excited about Directory, enjoy the [newsletter](/news), or want to just say
 hi, it will motivate me to continue. I welcome all manner of
 feedback cecilia@meet.directory.
-
-
-
-<section id="about-cta" class="text-center">
-<p>We'd love to hear from you.</p>
-<a href="mailto:contact@meet.directory" class="btn mt-2">Contact Us</a>
-</section>
