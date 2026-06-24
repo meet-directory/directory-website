@@ -48,10 +48,25 @@
   </div>
 </footer>
 
-  <script>
+<script>
   document.querySelector('.nav-toggle').addEventListener('click', () => {
     document.querySelector('.nav-links').classList.toggle('open');
   });
+
+  (function () {
+    var ua = navigator.userAgent || navigator.vendor || window.opera || '';
+    var isMobileWeb = /iPad|iPhone|iPod|Android/i.test(ua) ||
+      (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    if (!isMobileWeb) return;
+
+    var appLink = document.getElementById('app-link');
+    if (!appLink) return;
+
+    appLink.addEventListener('click', function (e) {
+      e.preventDefault();
+      alert("The Directory app isn't currently available on mobile web.");
+    });
+  })();
   </script>
 
 
