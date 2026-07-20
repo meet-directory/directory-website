@@ -11,7 +11,7 @@ type: page
 
 <div style="float:right; padding-right:3rem;">
 <img src="/pics/about_page/subway-guys.jpg" 
-     alt="Photo of Directory Developer" 
+     alt="Photo of two happy dudes."
 	 class="inline-img"
 	 style="
   width: 450px;
