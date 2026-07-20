@@ -11,7 +11,7 @@ type: page
 
 <div style="float:right; padding-right:3rem;">
 <img src="/pics/about_page/subway-guys.jpg" 
-     alt="Photo of two happy dudes."
+     alt="Photo of two happy dudes on a New York City subway."
 	 class="inline-img"
 	 style="
   width: 450px;
@@ -75,7 +75,7 @@ Banks of North Carolina. Then I graduated with a degree in computer science from
 Chapel Hill, where I learned to hate modern technology.
 
 <img src="/pics/about_page/kek.jpeg" 
-     alt="Photo of Directory Developer" 
+     alt="Photo of Directory Developer eating a delicious vegan sandwich." 
 	 class="circle-img" 
 	 style="float:right;"
 	 >
@@ -83,7 +83,7 @@ Chapel Hill, where I learned to hate modern technology.
 And while apps may suck, dating apps have been revolutionary for connecting LGBT
 people and are now so mainstream that they seem to be here to stay. I wanted to
 build an alternative that isn't guided by profit (though I'll certainly take
-donations at some point). 
+donations). 
 
 Thanks for your support,
 

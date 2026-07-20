@@ -7,20 +7,24 @@ type: page
 
 <br>
 
-### Donate
-Currently I am not in need of monetary donations, but if you are interested in a long-term sponsorship, do reach out. 
+<img src="/pics/venmo_qr.png" 
+     alt="Photo of Directory Developer" 
+	 class="inline-img"
+     style="float:left; border-radius:5%; margin-right: 40px; height: 350px; transform: rotate(-6deg);"
+	 >
 
-If you have some authentic pictures with partners, friends, or solo, you can [donate them](/photo_submission) to help us market Directory!
+### Donate Money
+You can donate money via venmo by scanning the QR code or 
+[clicking this link](https://www.paypal.com/qrcodes/venmocs/c4a4d9c8-1b71-4ff3-ae8f-439d4e834863?created=1784579864).
 
+### Donate Photos
+We need authentic photos of happy (or serious) people to market Directory better. We're looking for photos of: groups of friends, romantic couples or romantic groups. See more information [about donating photos here](/photo_submission)!
+
+<br>
+<br>
+<br>
 
 ---
-
-
-### Share
-Share us with your friends and on your socials!
-
----
-
 
 ### Sign up for beta testing
 I still have slots available for Android and iOS testing. This is essentially
@@ -32,6 +36,11 @@ Sign up for early access by
 <a href="mailto:contact@meet.directory" >emailing us</a>
  whether you are on iOS or Android and
 the email address associated to your google or apple account! 
+
+---
+
+### Share
+Share us with your friends and on your socials!
 
 ---
 
