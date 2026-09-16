@@ -28,26 +28,20 @@ experiencing the wonderful diversity of human connection.
 
 ---
 
-It's hard enough to make friends as an adult. Lack of third spaces, the rise of
-for-profit social media, and the loneliness epidemic in the US are no help.
-Dating and friending apps have entered the mainstream as a shallow way to
-combat this without fixing the underlying problems. And its no secret that
-these apps make money by playing your emotions to keep you scrolling.
-
-While we can't single-handedly fix what's driving the loneliness epidemic, we
-_can_ at least offer a modern way to connect that isn't trying to sell you
-something-- or sell your data.
-Directory is not-for-profit and open source. Because profit
-should have no influence on your social life.
+Directory is nothing new, we took what already exists and did it right. We
+offer a traditional dating or friending app interface, without the corporate
+interest. Directory is volunteer-run. There's no algorithm, no financial
+incentive, and we're not wasting your time or trying to keep you on the app.
 
 <img src="/pics/about_page/relationship_tags.png" 
      alt="Assortment of relationship tags:asexual, serious, open, kink, swinging, friends-only" 
 	 class="inline-img"
      style="float:left; border-radius:5%; transform: rotate(-6deg);"
 	 >
-Its our goal to accomodate all kinds of relationship configurations, and
-support all of our queer, polyamorous, kinky and open-minded friends. If the
-built-in filters aren't enough, our custom, user-contributed tag system allows
+
+The goal for Directory is also to accomodate all kinds of relationship configurations, and
+support all of our open-minded friends. If the
+built-in filters aren't enough, our custom, user-contributed tag system allow
 anyone to add tags that represent their lifestyle.
 
 
@@ -63,7 +57,22 @@ anyone to add tags that represent their lifestyle.
 -->
 
 Custom tags also allows you to add tags for all your favorite fandoms, games,
-sports and connect with other users on a love you already share.
+sports and connect with other local users on a love you already share.
+
+---
+
+### Development Status
+Directory is available on Android and in web browsers and we currently have a
+small hub in the North Carolina Triangle area and would like to expand to NYC.
+We are currently in maintanence mode. Unfortunately I don't currently have the
+bandwidth to add more features or release on iOS. If that is something you'd be
+interested in helping me with, please check out [this page](/donate) and 
+ <a href="mailto:cecilia@meet.directory" >reach out</a>!
+
+
+See what you can do to [support us](/donate) and read more about our development on our [blog](/news).
+
+
 
 ---
 
@@ -91,15 +100,6 @@ Thanks for your support,
 
 
 ---
-
-### Development Status
-
-I began making this app in February of 2026. It now mostly works, but there are a few kinks to work out before I remove the "beta" lable. It is now available on Android and coming soon to iOS!
-
-We are currently working on building a hub in the North Carolina Triangle area!
-See what you can do to [support us](/donate) and read more about our development status on our [blog](/news).
-
-
 
 <br>
 

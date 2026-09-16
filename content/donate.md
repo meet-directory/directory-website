@@ -7,22 +7,53 @@ type: page
 
 <br>
 
-<img src="/pics/venmo_qr.png" 
-     alt="Photo of Directory Developer" 
-	 class="inline-img"
-     style="float:left; border-radius:5%; margin-right: 40px; height: 350px; transform: rotate(-6deg);"
-	 >
 
-### Donate Money
-You can donate money via venmo by scanning the QR code or 
-[clicking this link](https://www.paypal.com/qrcodes/venmocs/c4a4d9c8-1b71-4ff3-ae8f-439d4e834863?created=1784579864).
 
-### Donate Photos
-We need authentic photos of happy (or serious) people to market Directory better. We're looking for photos of: groups of friends, romantic couples or romantic groups. See more information [about donating photos here](/photo_submission)!
+### Join the team!
+
+Directory's biggest block to success right now is a lack of manpower. It's currently developed by a one-gal team who has taken a step back and doesn't have time to make this a success.
+ Below are a few roles that I need help with, but if you think you can
+ contribute in another way, do feel free to reach out!
+
+#### iOS Testing and Release Management
+I don't have apple products, so I need someone to manage iOS testing and
+release. This requires little coding, but a good ability to figure out
+technical things. I've already been through most of it and am happy to lend a
+hand to get you started.
+
+You're responsibilities would be:
+- Own an iPhone and an Apple computer.
+- Compile the app with XCode and briefly test features on iOS whenever I make a new release
+- Upload builds to the Apple App store and manage the app store page.
+- The app itself is compiled via Godot, an open source game engine, which
+  already exports to iOS platforms. However you *may* need to handle
+  integration with anything that interacts with the iOS operating system,
+  namely push notifications, photo library access and location services.
+
+Please reach out for a chat if you're at all interested!
+
+#### Marketing
+Marketing makes or breaks a dating app. I could use help with SEO, branding, and social media outreach.
+
+#### Security and Reliability Engineering
+I have security experience, and the app is secure, however there is plenty to
+do to make it more robust against DDOS attacks, bot scraping and more. I want someone to
+make the Directory server code bullet-proof and do tests and write ups on
+security.
+
+The server is in RUST and the client code is exported from the open source game engine Godot.
+
+#### Godot Development
+The directory frontend is made with Godot, an open source game engine that
+compiles to all major platforms. Maintain, improve and add new features to the app.
 
 <br>
-<br>
-<br>
+
+#### Compensation
+I'm not making any money off of this, and neither would you. This is entirely
+volunteer-run. But if the app gets to the point of making money off donations,
+it will certainly be distributed. The ultimate goal for Directory would be to have enough users that donations could fairly compensate a small team to keep it running.
+
 
 ---
 
@@ -39,22 +70,28 @@ the email address associated to your google or apple account!
 
 ---
 
+<img src="/pics/venmo_qr.png" 
+     alt="Photo of Directory Developer" 
+	 class="inline-img"
+     style="float:left; border-radius:5%; margin-right: 40px; height: 250px; transform: rotate(-6deg);"
+	 >
+
+### Donate Money
+You can donate money via venmo by scanning the QR code or 
+[clicking this link](https://www.paypal.com/qrcodes/venmocs/c4a4d9c8-1b71-4ff3-ae8f-439d4e834863?created=1784579864).
+
+### Donate Photos
+We need authentic photos of happy (or serious) people to market Directory better. We're looking for photos of: groups of friends, romantic couples or romantic groups. See more information [about donating photos here](/photo_submission)!
+
+
+---
+
+---
+
 ### Share
 Share us with your friends and on your socials!
 
 ---
 
-### Contribute your expertise
-
-My biggest needs right now are:
-- help with marketing (i.e. running an instagram account)
-- developers to help with android/ios integration
-- legal advice
-- navigating nonprofit buraucracy
-
----
-
 ### Let me know!
-If you are excited about Directory, enjoy the [newsletter](/news), or want to just say
-hi, it will motivate me to continue. I welcome all manner of
-feedback cecilia@meet.directory.
+I welcome all manner of feedback, reach out to cecilia@meet.directory.
