@@ -15,15 +15,21 @@ Directory's biggest block to success right now is a lack of manpower. It's curre
  Below are a few roles that I need help with, but if you think you can
  contribute in another way, do feel free to reach out!
 
+#### Directory's vision
+My vision for Directory is to be a free, not-for-profit, mostly open source and
+mostly unrestricted app to facilitate connecting with local people in person.
+
+The dream would be that we support millions of users, with very low server
+costs and enough donations to support a small team to maintain it part time.
+
 #### iOS Testing and Release Management
-I don't have apple products, so I need someone to manage iOS testing and
-release. This requires little coding, but a good ability to figure out
-technical things. I've already been through most of it and am happy to lend a
-hand to get you started.
+I need someone to manage iOS testing and release. This requires little coding,
+but a good ability to figure out technical things. I've already been through
+most of it and am happy to lend a hand to get you started.
 
 You're responsibilities would be:
 - Own an iPhone and an Apple computer.
-- Compile the app with XCode and briefly test features on iOS whenever I make a new release
+- Compile the app with XCode and briefly test features on iOS whenever a new release is made
 - Upload builds to the Apple App store and manage the app store page.
 - The app itself is compiled via Godot, an open source game engine, which
   already exports to iOS platforms. However you *may* need to handle
@@ -48,12 +54,6 @@ The directory frontend is made with Godot, an open source game engine that
 compiles to all major platforms. Maintain, improve and add new features to the app.
 
 <br>
-
-#### Compensation
-I'm not making any money off of this, and neither would you. This is entirely
-volunteer-run. But if the app gets to the point of making money off donations,
-it will certainly be distributed. The ultimate goal for Directory would be to have enough users that donations could fairly compensate a small team to keep it running.
-
 
 ---
 
